@@ -1,0 +1,13 @@
+name: 'esquio-rollout'
+description: 'Xabaril Esquio Rollout task'
+author: 'lfraile'
+inputs:
+  esquioUrl:             
+    description: 'Esquio URL'
+  esquioApiKey:
+    description: 'Esquio API KEy (keep it secret)'
+  flagId:
+    description: 'Flag Id'
+runs:
+  using: 'node12'
+  main: 'lib/main.js'
