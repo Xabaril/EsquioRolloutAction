@@ -1,6 +1,9 @@
 name: 'esquio-rollout'
 description: 'Xabaril Esquio Rollout task'
-author: 'lfraile'
+author: 'Xabaril'
+branding:
+  icon: 'toggle-right'  
+  color: 'blue'
 inputs:
   esquioUrl:             
     description: 'Esquio URL'
