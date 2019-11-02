@@ -1,4 +1,4 @@
-name: "Test build action"
+name: "Build action"
 on:
   pull_request:
   push:
