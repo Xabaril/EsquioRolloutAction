@@ -17,8 +17,8 @@
     "node",
     "setup"
   ],
-  "author": "lfraile",
-  "license": "MIT",
+  "author": "Xabaril",
+  "license": "Apache-2.0",
   "dependencies": {
     "@actions/core": "^1.0.0"
   },
