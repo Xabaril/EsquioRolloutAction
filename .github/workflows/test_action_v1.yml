@@ -1,0 +1,21 @@
+name: "Test rollout (V1) task"
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+      - 'releases/*'
+jobs:
+  test_rollout_v1_job:
+    runs-on: ubuntu-latest
+    name: Rollout test
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: esquio-rollout-v1
+        uses: ./
+        with:
+          esquioUrl: 'https://esquiodemoui.azurewebsites.net/'
+          esquioApiKey: ${{ secrets.apikey }}
+          productName: 'Default'
+          featureName: 'MatchScore'
